@@ -1,29 +1,112 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
-    <head>
-        <title>Mans datorikas portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <h1>Mans datorikas portfolio</h1>
-        <h3><li>Attēlu apstrāde</li></h3>
-        <p>Gada sākumā apguvu attēlu apstrādes programmu GIMP, kurā laboju attēlu defektus un izveidoju animāciju.</p>
-        <img src="images/animacija.gif" style="width:500px;height:300px;">
-        <p>Programmā Inkscape veidoju plakātu par personas datiem un logo zālespļāvāja uzņēmumam.</p>
-        <img src="images/plakats.svg" style="width:700px;height:500px;">
-        <img src="images/logo.svg" style="width:500px;height:500px;">
-        <h3><li>Video montāža</li></h3>
-        <p>Vietnē clipchamp stundā montēju video ar dotiem video materiāliem, bet mājās pati montēju video par 3D klucīša montēšanu.</p>
-        <h3><li>Teksta apstrāde</li></h3>
-        <p>Teksta apstrādes tēmā apguvu strādāšanu ar Word, kurā iemācījos tekstu formatēt dažādos veidos.</p>
-        <img src="images/wordPD.png" style="width:800px;height:500px;">
-        <h3><li>Izklājlapas</li></h3>
-        <p>Apguvu darbošanos ar Excel lietojumprogrammu, kurā formatēju tabulas, atlasīju nepieciešamo informācīju no tabulām.</p>
-        <img src="images/excelPD.png" style="width:800px;height:500px;">   
-    </body>
+<html class="lapa1">
+<head>
+<title>Mans datorikas portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/mansStils.css">
+</head>
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Sākums</a>
+    <!-- Right-sided navbar links -->  
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-bar-item w3-button">Attēlu apstrāde<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="index.html#about" class="w3-bar-item w3-button">Rastrgrafika</a>
+        <a href="index.html#about" class="w3-bar-item w3-button">Vektorgrafika</a>
+</div>
+</div>   
+      <a href="index.html#team" class="w3-bar-item w3-button"><i></i>Video</a>
+      <a href="index.html#work" class="w3-bar-item w3-button"><i></i>Teksta apstrāde</a>
+      <a href="index.html#pricing" class="w3-bar-item w3-button"><i></i>Izklājlapas</a>
+      <a href="otrais.html#individuala" class="w3-bar-item w3-button"><i></i>Individuālā tēma</a>
+  </div>
+</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Attēlu apstrāde</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Video</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Teksta apstrāde</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Izklājlapas</a>
+  <a href="#individuala" onclick="w3_close()" class="w3-bar-item w3-button">Individuālā tēma</a>
+</nav>
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small w3-center">Datorikas portfolio</span><br> 
+    </div> 
+</header>
+<div class="w3-container w3-center" style="padding:128px 16px" id="about">
+  <h2 class="w3-center">Attēlu apstrāde</h2>
+  <h2 class="w3-center w3-large">Rastrgrafika</h2>
+  <p class="w3-center w3-large">Lietotnē GIMP laboju attēlu efektus.</p>
+  <div class="w3-row-padding w3-center" style="margin-top:40px">
+  <div class="container">
+    <img src="images/maja_nelab.png" alt="Attēls" width="500" height="300">
+    <img src="images/maja_lab.png" alt="Attēls" width="500" height="300">
+  <h3 class="w3-center w3-large">Vektorgrafika</h3>
+  <p class="w3-center w3-large">Lietotnē Inkscape veidoju plakātu un logo.</p>
+  <div class="w3-row-padding w3-center" style="margin-top:40px">
+  <div class="container">
+    <img src="images/plakatss.jpg" alt="Attēls" width="400" height="500">
+    <img src="images/logo.svg" alt="Attēls" width="600" height="600">
+</div>
+</div>
+</div>
+<div class="w3-container w3-center" style="padding:128px 16px" id="team">
+  <h2 class="w3-center">Video</h2>
+  <p class="w3-center w3-large">Vietnē clipchamp stundā montēju video ar dotiem video materiāliem, bet mājās pati montēju video par 3D klucīša salikšanu.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+   <div class="container">
+   <img src="images/puzlee.png" alt="bilde" width="400" height="250">
+   <video width="640" height="360" controls>
+       <source src="images/3D_kubs.mp4" type="video/mp4">
+</div>
+</div>
+</div>
+<div class="w3-container w3-center" style="padding:128px 16px" id="work">
+  <h2 class="w3-center">Teksta apstrāde</h2>
+  <p class="w3-center w3-large">Teksta apstrādes tēmā apguvu strādāšanu ar Word, kurā iemācījos tekstu formatēt dažādos veidos.</p>
+<div class="w3-row-padding" style="margin-top:64px">
+      <div class="container">
+    <img src="images/wordPD.png" alt="Attēls" width="800" height="500">
+</div>
+</div>
+</div>
+<div class="w3-container w3-center" style="padding:128px 16px" id="pricing">
+  <h2>Izklājlapas</h2>
+  <p class="w3-large">Apguvu darbošanos ar Excel lietojumprogrammu, kurā formatēju tabulas, atlasīju nepieciešamo informācīju no tabulām.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+      <div class="container">
+    <img src="images/excelPD.png" alt="Attēls" width="700" height="500">
+</div>
+</div>
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+var mySidebar = document.getElementById("mySidebar");
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+</body>
 </html>
