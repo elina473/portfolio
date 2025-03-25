@@ -26,4 +26,12 @@ body {
   padding: 16px;
 }
 
+.attels {
+            margin-bottom: 100px; /* Šeit vari mainīt vērtību, lai kontrolētu atstarpi */
+        }
+
+.kreisa-mala {
+            text-align: left;
+        }
+
 
