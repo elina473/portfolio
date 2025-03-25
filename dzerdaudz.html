@@ -8,19 +8,28 @@ function maksa(){
     for(i = 0; i < dz.length-1; i++) {
        if(dz[i].checked) sum+=Number(dz[i].value);
     }
+    sum = sum.toFixed(2);
     document.getElementById("maksa").innerHTML="Jāmaksā "+sum;
  }   
 </script>
 <p id="maksa"></p>
 <form>
-  <input type="checkbox" id="kafija" name="kafija" value="3.60">
-  <label for="kafija">kafija</label><br>
-  <input type="checkbox" id="sula"  name="sula" value="2.50">
-  <label for="sula">sula</label><br>
-  <input type="checkbox" id="kakao" name="kakao" value="3.20">
-  <label for="kakao">kakao</label><br>
-  <input type="checkbox" id="kvass" name="kvass" value="1.30">
-  <label for="kvass">kvass</label><br>
+  <div>
+    <input type="checkbox" id="kafija" name="kafija" value="3.60">
+    <label for="kafija">kafija</label>
+  </div>
+  <div>
+    <input type="checkbox" id="sula" name="sula" value="2.50">
+    <label for="sula">sula</label>
+  </div>
+  <div>
+    <input type="checkbox" id="kakao" name="kakao" value="3.20">
+    <label for="kakao">kakao</label>
+  </div>
+  <div>
+    <input type="checkbox" id="kvass" name="kvass" value="1.30">
+    <label for="kvass">kvass</label>
+  </div>
   <input type="button" id="poga" value="jāmaksā" onclick="maksa()">
 </form>
 </body>
