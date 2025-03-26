@@ -32,11 +32,12 @@
 </div>
 
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+</a>
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <button><a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a></button>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#rastrgrafika" onclick="w3_close()" class="w3-bar-item w3-button">Attēlu apstrāde</a>
   <a href="#vektorgrafika" onclick="w3_close()" class="w3-bar-item w3-button">Vektorgrafika</a>
   <a href="#skaldne" onclick="w3_close()" class="w3-bar-item w3-button">3D modelēšana</a>
@@ -45,6 +46,7 @@
   <a href="#izklajlapas" onclick="w3_close()" class="w3-bar-item w3-button">Izklājlapas</a>
   <a href="#individuala" onclick="w3_close()" class="w3-bar-item w3-button">Individuālā tēma</a>
 </nav>
+
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="sakums">
@@ -65,7 +67,7 @@
  <div class="w3-container w3-center" style="padding:128px 16px" id="vektorgrafika">   
      <h3>Vektorgrafika</h3>
   <p class="w3-center w3-large">Lietotnē Inkscape veidoju plakātu un logo zāles pļāvēju uzņēmumam Degreez.</p>
-  <div class="w3-row-padding w3-center" style="margin-top:40px" id="vektorgrafika">
+  <div class="w3-row-padding w3-center" style="margin-top:40px">
   <div class="container">
     <img src="images/plakatss.jpg" alt="Attēls" class="attels" width="400" height="500">
     <img src="images/logo.svg" alt="Attēls" class="attels" width="600" height="600">
@@ -82,7 +84,7 @@
   <p class="w3-center w3-large">Tinkercad veidoju vienu no sešām kuba skaldnēm ar daļu no uzņēmuma "Sparģelis" logo.</p>
   <div class="w3-row-padding" style="margin-top:64px">
    <div class="container">
-   <img src="images/puzlee.png" alt="bilde" width="400" height="250">
+   <img src="images/puzlee.png" alt="bilde" class="attels" width="400" height="250">
 </div>
 </div>
 </div>
@@ -92,8 +94,9 @@
   <p class="w3-center w3-large">Vietnē clipchamp stundā montēju video ar dotiem video materiāliem, bet mājās pati montēju video par 3D klucīša salikšanu.</p>
   <div class="w3-row-padding" style="margin-top:64px">
    <div class="container">
-   <video width="640" height="360" controls>
+   <video class="attels" width="640" height="360" controls>
        <source src="images/3D_kubs.mp4" type="video/mp4">
+   </video>
 </div>
 </div>
 </div>
@@ -131,7 +134,6 @@ function onClick(element) {
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
-// Open the sidebar
 function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
@@ -140,7 +142,6 @@ function w3_open() {
   }
 }
 
-// Close the sidebar
 function w3_close() {
   mySidebar.style.display = "none";
 }
