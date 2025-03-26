@@ -33,5 +33,24 @@ body {
 .kreisa-mala {
             text-align: left;
         }
+        
+.w3-hide-large {
+  display: none;
+}
+
+/* Paslēpt izvēlnes pogu uz vidējiem ekrāniem */
+.w3-hide-medium {
+  display: none;
+}
+
+/* Atļaut pogas parādīšanos uz maziem ekrāniem */
+@media screen and (max-width: 768px) {
+  .w3-hide-large {
+    display: block;
+  }
+  .w3-hide-medium {
+    display: block;
+  }
+}
 
 
