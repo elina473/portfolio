@@ -10,7 +10,6 @@
 <link rel="stylesheet" href="css/mansStils.css">
 </head>
 <body>
-<!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="w3_close()"</a>
@@ -18,7 +17,6 @@
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
     <i class="fa fa-bars"></i>
   </a>
-    <!-- Right-sided navbar links -->
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button">Attēlu apstrāde<i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -33,7 +31,6 @@
       <a href="otrais.html#individuala" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Individuālā tēma</a>
 </div>
 </div>
-<!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Aizvērt</a>
   <a href="#rastrgrafika" onclick="w3_close()" class="w3-bar-item w3-button">Attēlu apstrāde</a>
@@ -43,13 +40,11 @@
   <a href="#izklajlapas" onclick="w3_close()" class="w3-bar-item w3-button">Izklājlapas</a>
   <a href="otrais.html#individuala" onclick="w3_close()" class="w3-bar-item w3-button">Individuālā tēma</a>
 </nav>
-<!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="sakums">
   <div class="w3-display-left w3-text-white" style="padding:48px">
     <span class="w3-jumbo w3-hide-small w3-center">Datorikas portfolio</span><br> 
     </div> 
 </header>
-<!-- About Section -->
 <div class="w3-container w3-center" style="padding:128px 16px" id="rastrgrafika">
   <h2>Attēlu apstrāde</h2>
   <h3>Rastrgrafika</h3>
@@ -71,7 +66,6 @@
 </div>
 </div>
 </div>
-<!-- Team Section -->
 <div class="w3-container w3-center" style="padding:128px 16px" id="skaldne">
   <h2 class="w3-center">3D modelēšana</h2>
   <p class="w3-center w3-large">Tinkercad veidoju vienu no sešām kuba skaldnēm ar daļu no uzņēmuma "Sparģelis" logo.</p>
@@ -92,7 +86,6 @@
 </div>
 </div>
 </div>
-<!-- Work Section -->
 <div class="w3-container w3-center" style="padding:128px 16px" id="word">
   <h2 class="w3-center">Teksta apstrāde</h2>
   <p class="w3-center w3-large">Teksta apstrādes tēmā apguvu strādāšanu ar Word, kurā iemācījos tekstu formatēt dažādos veidos.</p>
@@ -113,18 +106,13 @@
 </div>
 </div>
 <script>
-// Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
-
 function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
@@ -132,8 +120,6 @@ function w3_open() {
     mySidebar.style.display = 'block';
   }
 }
-
-// Close the sidebar with the close button
 function w3_close() {
     mySidebar.style.display = "none";
 }
