@@ -12,7 +12,11 @@
     <body>
         <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.html#sakums" class="w3-bar-item w3-button w3-wide">Sākums</a>  
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="w3_close()"</a>
+    <a href="index.html#sakums" class="w3-bar-item w3-button w3-wide">Sākums</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-bar-item w3-button">Attēlu apstrāde<i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -20,33 +24,28 @@
         <a href="index.html#vektorgrafika" class="w3-bar-item w3-button">Vektorgrafika</a>
       </div>
     </div>
-      <a href="index.html#video" class="w3-bar-item w3-button"><i></i>Video</a>
-      <a href="index.html#word" class="w3-bar-item w3-button"><i></i>Teksta apstrāde</a>
-      <a href="index.html#izklajlapas" class="w3-bar-item w3-button"><i></i>Izklājlapas</a>
-      <a href="index.html#individuala" class="w3-bar-item w3-button"><i></i>Individuālā tēma</a>
+      <a href="index.html#skaldne" class="w3-bar-item w3-button w3-padding-large w3-hide-small">3D modelēšana</a>
+      <a href="index.html#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Video</a>
+      <a href="index.html#word" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Teksta apstrāde</a>
+      <a href="index.html#izklajlapas" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Izklājlapas</a>
+      <a href="index.html#individuala" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Individuālā tēma</a>
   </div>
 </div>
-        
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
- 
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#rastrgrafika" onclick="w3_close()" class="w3-bar-item w3-button">Attēlu apstrāde</a>
-  <a href="#vektorgrafika" onclick="w3_close()" class="w3-bar-item w3-button">Vektorgrafika</a>
-  <a href="#video" onclick="w3_close()" class="w3-bar-item w3-button">Video</a>
-  <a href="#word" onclick="w3_close()" class="w3-bar-item w3-button">Teksta apstrāde</a>
-  <a href="#izklajlapas" onclick="w3_close()" class="w3-bar-item w3-button">Izklājlapas</a>
-  <a href="#individuala" onclick="w3_close()" class="w3-bar-item w3-button">Izklājlapas</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Aizvērt</a>
+  <a href="index.html#rastrgrafika" onclick="w3_close()" class="w3-bar-item w3-button">Attēlu apstrāde</a>
+  <a href="index.html#vektorgrafika" onclick="w3_close()" class="w3-bar-item w3-button">Vektorgrafika</a>
+  <a href="index.html#skaldne" onclick="w3_close()" class="w3-bar-item w3-button">3D modelēšana</a>
+  <a href="index.html#video" onclick="w3_close()" class="w3-bar-item w3-button">Video</a>
+  <a href="index.html#word" onclick="w3_close()" class="w3-bar-item w3-button">Teksta apstrāde</a>
+  <a href="index.html#izklajlapas" onclick="w3_close()" class="w3-bar-item w3-button">Izklājlapas</a>
+  <a href="index.html#individuala" onclick="w3_close()" class="w3-bar-item w3-button">Izklājlapas</a>
 </nav>
-
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="sakums">
   <div class="w3-display-left w3-text-white" style="padding:48px">
     <span class="w3-jumbo w3-hide-small w3-center">Datorikas portfolio</span><br> 
     </div> 
 </header>
-
 <div class="w3-container w3-center" style="padding:128px 16px" id="individuala">       
   <h2>Personas privāto datu aizsardzība</h2>
   <p class="w3-large"></p>
@@ -57,7 +56,6 @@
   <img src="images/animacija.gif" style="width:500px;height:300px;">
   <img src="images/plakatss.jpg" style="width:450px;height:600px;">  
 </div>
-
 <script>
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -65,7 +63,6 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
 var mySidebar = document.getElementById("mySidebar");
 
 function w3_open() {
@@ -75,11 +72,9 @@ function w3_open() {
     mySidebar.style.display = 'block';
   }
 }
-
 function w3_close() {
     mySidebar.style.display = "none";
 }
 </script>                    
-    </body>
-</html>    
-
+</body>
+</html>
