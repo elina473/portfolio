@@ -4,17 +4,15 @@ body, html {
   height: 100%;
   line-height: 1.8;
 }
-body {
-           /* Pievienojiet attēlu kā fona attēlu */
-  background-image: url("../images/backgr.jpg"); /* Aizstājiet ar savu attēla ceļu */
-  background-size: cover;  /* Attēls pārklāj visu ekrānu */
-  background-position: center;  /* Attēls tiek centrēts */
-  background-attachment: fixed;  /* Fons paliek fiksēts, kad lapa tiek ritināta */
+body{
+  background-image: url("../images/backgr.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
 }
 
-/* Full height image header */
 .lapa1 .bgimg-1 {
   background-position: center;
   background-size: cover;
@@ -30,12 +28,8 @@ body {
             margin-bottom: 100px;
             width: 70%;
             height: auto;
-            max-width: 70%; /* Šeit vari mainīt vērtību, lai kontrolētu atstarpi */
+            max-width: 70%;
         }
-
 .kreisa-mala {
             text-align: left;
         }
- 
-
-
