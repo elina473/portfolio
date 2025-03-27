@@ -28,32 +28,14 @@ body {
 
 .attels {
             margin-bottom: 100px;
-            width: 100%;
+            width: 70%;
             height: auto;
-            max-width: 100%; /* Šeit vari mainīt vērtību, lai kontrolētu atstarpi */
+            max-width: 70%; /* Šeit vari mainīt vērtību, lai kontrolētu atstarpi */
         }
 
 .kreisa-mala {
             text-align: left;
         }
-        
-.w3-hide-large {
-  display: none;
-}
-
-/* Paslēpt izvēlnes pogu uz vidējiem ekrāniem */
-.w3-hide-medium {
-  display: none;
-}
-
-/* Atļaut pogas parādīšanos uz maziem ekrāniem */
-@media screen and (max-width: 768px) {
-  .w3-hide-large {
-    display: block;
-  }
-  .w3-hide-medium {
-    display: block;
-  }
-}
+ 
 
 
